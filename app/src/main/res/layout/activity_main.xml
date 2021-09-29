@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#2196F3"
+        android:padding="16dp"
+        android:text="Titulo"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_subtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@id/txt_titulo"
+        android:background="#FF5722"
+        android:text="Subtitulo"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_subtitulo">
+
+        <TextView
+            android:id="@+id/txt_texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:lineSpacingExtra="20sp"
+            android:padding="10dp"
+            android:text="@string/texto"
+            android:textSize="20sp" />
+    </ScrollView>
+
+</RelativeLayout>
